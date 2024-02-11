@@ -1,0 +1,104 @@
+/*@!Encoding:1250*/
+variables
+{
+  message msg_MyECU_2_Rear M2R;
+  message msg_Rear_2_MyECU R2M;
+  
+  msTimer delayRight; 
+  msTimer delayLeft;
+  
+  int temp;
+  int lockStatus;
+  int ignitionStatus;
+  int solarValue; 
+  int currentSpeedSliderValue;
+  int intSpeedLimit = 0;
+}
+
+on envVar env_Locking
+{
+  temp = getValue(env_Locking);
+  $sig_Locking = temp;
+}
+
+on envVar env_Ignition
+{
+  lockStatus = getValue(env_Locking);
+  if(lockStatus == 1){
+    temp = getValue(env_Ignition);
+    $sig_Ignition = temp;
+  }
+}
+
+
+on envVar env_SolarPanelSwitch
+{
+  ignitionStatus = getValue(env_Ignition);
+  if(ignitionStatus == 1){
+    temp = getValue(env_SolarPanelSwitch);
+    $sig_SolarPanelSwitch = temp;
+  }
+}
+
+on envVar env_SunlightPresence
+{
+  ignitionStatus = getValue(env_Ignition);
+  if(ignitionStatus == 1){
+    temp = GetValue(env_SunlightPresence);
+    $sig_SunlightPresence = temp;
+  }
+}
+
+
+on envVar env_BatteryModeSwitch
+{
+  ignitionStatus = getValue(env_Ignition);
+  if(ignitionStatus == 1){
+    temp = GetValue(env_BatteryModeSwitch);
+    $sig_BatteryModeSwitch = temp;
+    
+  }
+}
+
+on message msg_MyECU_2_Rear
+{
+  putValue(env_BatteryStatus, this.sig_BatteryStatus);
+  putValue(env_SpeedLimit, this.sig_SpeedLimit);
+  intSpeedLimit = getValue(env_SpeedLimit);
+  @sysvar::VTT::MyECU::Dio::env_Speed = intSpeedLimit;
+}
+
+
+on start
+{
+
+}
+
+ApCanOff ()
+{
+}
+
+ApCanOn ()
+{
+}
+
+on key 'u'
+{
+  
+}
+
+on timer delayRight
+{
+
+}
+
+on timer delayLeft
+{
+
+}
+
+on preStart
+{
+   Nm_NetworkRelease();
+}
+

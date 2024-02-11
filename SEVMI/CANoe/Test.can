@@ -1,0 +1,180 @@
+/*@!Encoding:1252*//*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+
+void MainTest()
+{
+  testModuleTitle("t_mod_titl()");
+  testReportAddEngineerInfo("Tested by", "anastasija");
+  testReportAddSUTInfo("some string","ognjen");
+  testReportAddSetupInfo("Device: CANister", "Firmware: 3.0.05");
+  
+  tc1();
+  tc2();
+  tc3();
+  tc4();
+  tc5();
+  tc6();
+}
+
+
+testCase tc1()
+{
+  byte IBatteryStatus = 175;
+  byte ISpeedLimit = 120;
+  long waitRes = -3;
+  write("tc1 started");
+  
+  @sysvar::VTT::MyECU::Dio::env_Speed = 100;
+  putValue(env_Locking, 0);
+  putValue(env_Ignition, 0);
+  putValue(env_SolarPanelSwitch, 0);
+  putValue(env_CurrentSpeedSlider, 0);
+  putValue(env_SunlightPresence, 0);
+  waitRes = testWaitForTimeout(3000);
+ 
+  IBatteryStatus = getValue(env_BatteryStatus);
+  ISpeedLimit = getValue(env_SpeedLimit);
+  if ((IBatteryStatus != 175) || ISpeedLimit != 100) {
+    write("tc1 FAILED");
+  } else {
+    write("tc1 PASSED");
+  }
+}
+
+testCase tc2()
+{
+  byte IBatteryStatus = 175;
+  byte ISpeedLimit = 60;
+  long waitRes = -3;
+  write("tc2 started");
+  
+  @sysvar::VTT::MyECU::Dio::env_Speed = 60;
+  putValue(env_Locking, 1);
+  putValue(env_Ignition, 1);
+  putValue(env_SolarPanelSwitch, 0);
+  putValue(env_SunlightPresence, 0);
+  
+  waitRes = testWaitForTimeout(3000);
+  IBatteryStatus = getValue(env_BatteryStatus);
+  ISpeedLimit = getValue(env_SpeedLimit);
+  if ((IBatteryStatus >= 175) || ISpeedLimit != 60) {
+    write("tc2 FAILED");
+  } else {
+    write("tc2 PASSED");
+  }
+}
+
+testCase tc3()
+{
+  byte IBatteryStatus = 170;
+  byte ISpeedLimit = 0;
+  long waitRes = -3;
+  write("tc3 started");
+  
+  @sysvar::VTT::MyECU::Dio::env_Speed = 0;
+  putValue(env_Locking, 1);
+  putValue(env_Ignition, 1);
+  putValue(env_SolarPanelSwitch, 0);
+  putValue(env_SunlightPresence, 0);
+  
+  waitRes = testWaitForTimeout(3000);
+  
+  IBatteryStatus = getValue(env_BatteryStatus);
+ 
+  ISpeedLimit = getValue(env_SpeedLimit);
+
+  if ((IBatteryStatus != 170) || ISpeedLimit != 0) {
+    write("tc3 FAILED");
+  } else {
+    write("tc3 PASSED");
+  }
+}
+
+testCase tc4()
+{
+  byte IBatteryStatus = 170;
+  byte ISpeedLimit = 0;
+  long waitRes = -3;
+  write("tc4 started");
+  
+  @sysvar::VTT::MyECU::Dio::env_Speed = 0;
+  putValue(env_Locking, 1);
+  putValue(env_Ignition, 1);
+  putValue(env_SolarPanelSwitch, 0);
+  putValue(env_SunlightPresence, 70);
+  
+  waitRes = testWaitForTimeout(3000);
+  IBatteryStatus = getValue(env_BatteryStatus);
+  ISpeedLimit = getValue(env_SpeedLimit);
+
+  if ((IBatteryStatus != 170) || ISpeedLimit != 0) {
+    write("tc4 FAILED");
+  } else {
+    write("tc4 PASSED");
+  }
+}
+
+testCase tc5()
+{
+  byte IBatteryStatus = 170;
+  byte ISpeedLimit = 0;
+  long waitRes = -3;
+  write("tc5 started");
+  
+  @sysvar::VTT::MyECU::Dio::env_Speed = 0;
+  putValue(env_Locking, 1);
+  putValue(env_Ignition, 1);
+  putValue(env_SolarPanelSwitch, 1);
+  putValue(env_SunlightPresence, 70);
+
+    waitRes = testWaitForTimeout(3000);
+  IBatteryStatus = getValue(env_BatteryStatus);
+  ISpeedLimit = getValue(env_SpeedLimit);
+
+  if ((IBatteryStatus <= 170) || ISpeedLimit != 0) {
+    write("tc5 FAILED");
+  } else {
+    write("tc5 PASSED");
+  }
+}
+
+testCase tc6()
+{
+  byte IBatteryStatus = 255;
+  byte ISpeedLimit = 180;
+  long waitRes = -3;
+  write("tc6 started");
+  
+  @sysvar::VTT::MyECU::Dio::env_Speed = 255;
+  putValue(env_Locking, 1);
+  putValue(env_Ignition, 1);
+  putValue(env_SolarPanelSwitch, 1);
+  putValue(env_SunlightPresence, 255);
+    waitRes = testWaitForTimeout(3000);
+  IBatteryStatus = getValue(env_BatteryStatus);
+  ISpeedLimit = getValue(env_SpeedLimit);
+  if ((IBatteryStatus <= 170) || ISpeedLimit != 180) {
+    write("tc6 FAILED");
+  } else {
+    write("tc6 PASSED");
+  }
+}
+
+testCase tc()
+{
+  @sysvar::VTT::MyECU::Dio::env_Speed = 0;
+  putValue(env_Locking, 0);
+  putValue(env_Ignition, 0);
+  putValue(env_SolarPanelSwitch, 0);
+  putValue(env_SunlightPresence, 0);
+ 
+}

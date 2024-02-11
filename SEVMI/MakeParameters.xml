@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MakeParameters xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <VersionInfo MajorVer="2" MinorVer="0" BuildVer="126" PrivateVer="0">
+    <ProcessName>VTT.exe</ProcessName>
+  </VersionInfo>
+  <Timestamp>2024-02-10T20:05:20.6703534+01:00</Timestamp>
+  <GlobalMakeStepList>
+    <MakeStep FullName="Vector.VTT.Generator.GenerateVsProject" HashCode="46f90c20d184ce8a995be753c14bb9fd" Duration="2091">2024-02-10T20:05:18.2959108+01:00</MakeStep>
+    <MakeStep FullName="Vector.VTT.Generator.BuildVsProject" HashCode="d33511e1d004695c4ff5c55e147bbd76" Duration="1902">2024-02-10T20:05:20.2485461+01:00</MakeStep>
+    <MakeStep FullName="Vector.VTT.Generator.GenerateSignalAndSysVarCsvFile" HashCode="99ebe9f7590606bd3c7a5de91107b6fa" Duration="1000">2024-02-10T19:37:44.7950987+01:00</MakeStep>
+  </GlobalMakeStepList>
+  <EcuInfoList>
+    <EcuInfo>
+      <EcuName>MyECU</EcuName>
+      <MakeStepList>
+        <MakeStep FullName="Vector.VTT.Generator.GenerateRteHooks" HashCode="bba8300c6df09177a8d75989d43ca1b5" Duration="1000">2024-02-10T20:05:16.1453102+01:00</MakeStep>
+        <MakeStep FullName="Vector.VTT.Generator.PopulateSourceFiles" Duration="1000">2024-02-10T17:45:19.3964969+01:00</MakeStep>
+      </MakeStepList>
+    </EcuInfo>
+  </EcuInfoList>
+</MakeParameters>

@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="AFS-Panel">
+    <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl9" Children="Controls" ControlName="Ignition:">
+      <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControlBSI1" ControlName="CAN:IgnitionSwitch">
+        <Property Name="Name">SwitchControlBSI1</Property>
+        <Property Name="Size">23, 14</Property>
+        <Property Name="Location">21, 115</Property>
+        <Property Name="StateCnt">2</Property>
+        <Property Name="SwitchValues">1;2;0;1</Property>
+        <Property Name="SwitchValuesRx">1;2;0;1</Property>
+        <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+        <Property Name="TransparentColor">White</Property>
+        <Property Name="ImageFile">..\..\..\..\..\Users\nituser\Downloads\Project1 - PejkovicStojisavljevic\P1\P01 - Project materials\Panels\Bitmaps\IgnitDsp_2.bmp</Property>
+        <Property Name="SymbolConfiguration">5;1;environment;;;env_Ignition;1;;;-1;;;</Property>
+        <Property Name="TabIndex">1</Property>
+        <Property Name="ReadOnlyControl">True</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl8" ControlName="CAN:IgnitionSwitch">
+        <Property Name="Name">SwitchControl8</Property>
+        <Property Name="Size">115, 110</Property>
+        <Property Name="Location">9, 19</Property>
+        <Property Name="StateCnt">2</Property>
+        <Property Name="Activation">Left</Property>
+        <Property Name="SwitchValues">1;2;0;1</Property>
+        <Property Name="SwitchValuesRx">1;2;0;1</Property>
+        <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+        <Property Name="ImageFile">..\..\..\..\..\Users\nituser\Downloads\Project1 - PejkovicStojisavljevic\P1\P01 - Project materials\Panels\Bitmaps\Ignition.bmp</Property>
+        <Property Name="SymbolConfiguration">5;1;environment;;;env_Ignition;1;;;-1;;;</Property>
+        <Property Name="TabIndex">8</Property>
+      </Object>
+      <Property Name="Name">GroupBoxControl9</Property>
+      <Property Name="Size">133, 151</Property>
+      <Property Name="Location">52, 302</Property>
+      <Property Name="BackColor">White</Property>
+      <Property Name="Font">Microsoft Sans Serif, 9.75pt, style=Bold</Property>
+      <Property Name="Text">Ignition</Property>
+      <Property Name="ForeColor">Black</Property>
+      <Property Name="TabIndex">21</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl10" Children="Controls" ControlName="GroupBoxControl10">
+      <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl9" Children="Controls" ControlName="Static Text 3">
+        <Property Name="Name">StaticTextControl9</Property>
+        <Property Name="Size">74, 13</Property>
+        <Property Name="Location">36, 189</Property>
+        <Property Name="BackColor">White</Property>
+        <Property Name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+        <Property Name="TextAlign">MiddleCenter</Property>
+        <Property Name="Text">UNLOCKED</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl8" Children="Controls" ControlName="Static Text 3">
+        <Property Name="Name">StaticTextControl8</Property>
+        <Property Name="Size">56, 13</Property>
+        <Property Name="Location">36, 59</Property>
+        <Property Name="BackColor">White</Property>
+        <Property Name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+        <Property Name="TextAlign">MiddleCenter</Property>
+        <Property Name="Text">LOCKED</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl2" ControlName="Switch/Indicator 1">
+        <Property Name="Name">SwitchControl2</Property>
+        <Property Name="Size">80, 105</Property>
+        <Property Name="Location">26, 78</Property>
+        <Property Name="StateCnt">2</Property>
+        <Property Name="Activation">Left</Property>
+        <Property Name="SwitchValues">1;2;0;1</Property>
+        <Property Name="SwitchValuesRx">1;2;0;1</Property>
+        <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+        <Property Name="SymbolConfiguration">5;1;environment;;;env_Locking;1;;;-1;;;</Property>
+        <Property Name="TabIndex">30</Property>
+      </Object>
+      <Property Name="Name">GroupBoxControl10</Property>
+      <Property Name="Size">132, 260</Property>
+      <Property Name="Location">52, 25</Property>
+      <Property Name="BackColor">White</Property>
+      <Property Name="Font">Microsoft Sans Serif, 9.75pt, style=Bold</Property>
+      <Property Name="Text">Key</Property>
+      <Property Name="ForeColor">Black</Property>
+      <Property Name="TabIndex">20</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl3" Children="Controls" ControlName="Group Box 3">
+      <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl5" ControlName="Switch/Indicator 3">
+        <Property Name="Name">SwitchControl5</Property>
+        <Property Name="Size">23, 14</Property>
+        <Property Name="Location">338, 158</Property>
+        <Property Name="StateCnt">2</Property>
+        <Property Name="SwitchValues">1;2;0;1</Property>
+        <Property Name="SwitchValuesRx">1;2;0;1</Property>
+        <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+        <Property Name="TransparentColor">White</Property>
+        <Property Name="ImageFile">..\..\..\..\..\Users\nituser\Downloads\Project1 - PejkovicStojisavljevic\P1\P01 - Project materials\Panels\Bitmaps\IgnitDsp_2.bmp</Property>
+        <Property Name="SymbolConfiguration">5;1;environment;;;env_BatteryModeSwitch;1;;;-1;;;</Property>
+        <Property Name="TabIndex">50</Property>
+        <Property Name="ReadOnlyControl">True</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl4" ControlName="Switch/Indicator 2">
+        <Property Name="Name">SwitchControl4</Property>
+        <Property Name="Size">23, 14</Property>
+        <Property Name="Location">96, 158</Property>
+        <Property Name="StateCnt">2</Property>
+        <Property Name="SwitchValues">1;2;0;1</Property>
+        <Property Name="SwitchValuesRx">1;2;0;1</Property>
+        <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+        <Property Name="TransparentColor">White</Property>
+        <Property Name="ImageFile">..\..\..\..\..\Users\nituser\Downloads\Project1 - PejkovicStojisavljevic\P1\P01 - Project materials\Panels\Bitmaps\IgnitDsp_2.bmp</Property>
+        <Property Name="SymbolConfiguration">5;1;environment;;;env_SolarPanelSwitch;1;;;-1;;;</Property>
+        <Property Name="TabIndex">47</Property>
+        <Property Name="ReadOnlyControl">True</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl8" Children="Controls" ControlName="Group Box 7">
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl3" Children="Controls" ControlName="Static Text 2">
+          <Property Name="Name">StaticTextControl3</Property>
+          <Property Name="Size">37, 13</Property>
+          <Property Name="Location">179, 75</Property>
+          <Property Name="BackColor">White</Property>
+          <Property Name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+          <Property Name="TextAlign">MiddleCenter</Property>
+          <Property Name="Text">100%</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl2" Children="Controls" ControlName="Static Text 1">
+          <Property Name="Name">StaticTextControl2</Property>
+          <Property Name="Size">23, 13</Property>
+          <Property Name="Location">13, 75</Property>
+          <Property Name="BackColor">White</Property>
+          <Property Name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+          <Property Name="TextAlign">MiddleCenter</Property>
+          <Property Name="Text">0%</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="TrackBarControl4" Children="Controls" ControlName="Track Bar 3">
+          <Property Name="Name">TrackBarControl4</Property>
+          <Property Name="Size">175, 47</Property>
+          <Property Name="Location">254, 37</Property>
+          <Property Name="Maximum">100</Property>
+          <Property Name="DisplayMinMax">True</Property>
+          <Property Name="MaximumDouble">100</Property>
+          <Property Name="SymbolConfiguration">5;1;environment;;;env_SunlightPresence;1;;;-1;;;</Property>
+          <Property Name="TabIndex">21</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ProgressBarControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="ProgressBarControl3" Children="Controls" ControlName="Progress Bar 2">
+          <Property Name="Name">ProgressBarControl3</Property>
+          <Property Name="Size">203, 28</Property>
+          <Property Name="Location">13, 41</Property>
+          <Property Name="OriginValue">0</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BarForeColor">Yellow</Property>
+          <Property Name="DecimalPlaces">0</Property>
+          <Property Name="ValueSize">38, 28</Property>
+          <Property Name="SymbolConfiguration">5;1;environment;;;env_SunlightPresence;1;;;-1;;;</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl8</Property>
+        <Property Name="Size">440, 132</Property>
+        <Property Name="Location">5, 296</Property>
+        <Property Name="Font">Microsoft Sans Serif, 9.75pt, style=Bold</Property>
+        <Property Name="Text">SUNLIGHT PRESENCE %</Property>
+        <Property Name="TabIndex">44</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl4" Children="Controls" ControlName="Group Box 4">
+        <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="TrackBarControl1" Children="Controls" ControlName="Track Bar">
+          <Property Name="Name">TrackBarControl1</Property>
+          <Property Name="Size">253, 47</Property>
+          <Property Name="Location">24, 30</Property>
+          <Property Name="Maximum">180</Property>
+          <Property Name="DisplayMinMax">True</Property>
+          <Property Name="MaximumDouble">180</Property>
+          <Property Name="SymbolConfiguration">5;16;VTT::MyECU::Dio;;;env_Speed;1;;;-1;;;</Property>
+          <Property Name="TabIndex">34</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl1" ControlName="LCD Control">
+          <Property Name="Name">LCDControl1</Property>
+          <Property Name="Size">117, 47</Property>
+          <Property Name="Location">296, 30</Property>
+          <Property Name="NumberIntDigits">3</Property>
+          <Property Name="DecimalPlaces">0</Property>
+          <Property Name="SymbolConfiguration">5;16;VTT::MyECU::Dio;;;env_Speed;1;;;-1;;;</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl4</Property>
+        <Property Name="Size">440, 100</Property>
+        <Property Name="Location">5, 190</Property>
+        <Property Name="Font">Microsoft Sans Serif, 9.75pt, style=Bold</Property>
+        <Property Name="Text">VEHICLE SPEED</Property>
+        <Property Name="TabIndex">34</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl3" ControlName="Switch/Indicator 3">
+        <Property Name="Name">SwitchControl3</Property>
+        <Property Name="Size">80, 105</Property>
+        <Property Name="Location">311, 47</Property>
+        <Property Name="StateCnt">2</Property>
+        <Property Name="Activation">Left</Property>
+        <Property Name="SwitchValues">1;2;0;1</Property>
+        <Property Name="SwitchValuesRx">1;2;0;1</Property>
+        <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+        <Property Name="SymbolConfiguration">5;1;environment;;;env_BatteryModeSwitch;1;;;-1;;;</Property>
+        <Property Name="TabIndex">30</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl1" ControlName="Switch/Indicator 2">
+        <Property Name="Name">SwitchControl1</Property>
+        <Property Name="Size">80, 105</Property>
+        <Property Name="Location">68, 47</Property>
+        <Property Name="StateCnt">2</Property>
+        <Property Name="Activation">Left</Property>
+        <Property Name="SwitchValues">1;2;0;1</Property>
+        <Property Name="SwitchValuesRx">1;2;0;1</Property>
+        <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+        <Property Name="SymbolConfiguration">5;1;environment;;;env_SolarPanelSwitch;1;;;-1;;;</Property>
+        <Property Name="TabIndex">29</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl5" Children="Controls" ControlName="Static Text 4">
+        <Property Name="Name">StaticTextControl5</Property>
+        <Property Name="Size">72, 13</Property>
+        <Property Name="Location">311, 28</Property>
+        <Property Name="BackColor">White</Property>
+        <Property Name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+        <Property Name="TextAlign">MiddleCenter</Property>
+        <Property Name="Text">ECO MODE</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl4" Children="Controls" ControlName="Static Text 3">
+        <Property Name="Name">StaticTextControl4</Property>
+        <Property Name="Size">92, 13</Property>
+        <Property Name="Location">68, 28</Property>
+        <Property Name="BackColor">White</Property>
+        <Property Name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+        <Property Name="TextAlign">MiddleCenter</Property>
+        <Property Name="Text">SOLAR PANEL</Property>
+      </Object>
+      <Property Name="Name">GroupBoxControl3</Property>
+      <Property Name="Size">446, 443</Property>
+      <Property Name="Location">241, 25</Property>
+      <Property Name="Font">Microsoft Sans Serif, 9.75pt, style=Bold</Property>
+      <Property Name="Text">INPUT CONTROLS</Property>
+      <Property Name="TabIndex">19</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl1" Children="Controls" ControlName="Group Box">
+      <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7" Children="Controls" ControlName="Static Text 5">
+        <Property Name="Name">StaticTextControl7</Property>
+        <Property Name="Size">37, 13</Property>
+        <Property Name="Location">173, 241</Property>
+        <Property Name="BackColor">White</Property>
+        <Property Name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+        <Property Name="TextAlign">MiddleCenter</Property>
+        <Property Name="Text">100%</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl6" Children="Controls" ControlName="Static Text 5">
+        <Property Name="Name">StaticTextControl6</Property>
+        <Property Name="Size">23, 23</Property>
+        <Property Name="Location">173, 460</Property>
+        <Property Name="BackColor">White</Property>
+        <Property Name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+        <Property Name="TextAlign">MiddleCenter</Property>
+        <Property Name="Text">0%</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.AnalogGaugeControl, Vector.CANalyzer.Panels.AnalogGauge, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="AnalogGaugeControl2" ControlName="Analog Gauge 2">
+        <Property Name="Name">AnalogGaugeControl2</Property>
+        <Property Name="Size">241, 190</Property>
+        <Property Name="Location">3, 21</Property>
+        <Property Name="MinColor">Orchid</Property>
+        <Property Name="BackgroundColor">White</Property>
+        <Property Name="CriticalProps" Member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAXFZlY3Rvci5DQU5hbHl6ZXIuUGFuZWxzLkFuYWxvZ0dhdWdlLCBWZXJzaW9uPTExLjAuODEuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBgQAAAA2VmVjdG9yLkNBTmFseXplci5QYW5lbHMuRGVzaWduLkdhdWdlQ3JpdGljYWxQcm9wZXJ0aWVzBgUAAAAyVm9pZCAuY3RvcihEb3VibGUsIERvdWJsZSwgRG91YmxlLCBEb3VibGUsIERvdWJsZSkGBgAAAFAuY3RvcihTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlKQEAAAAKCw==">
+          <Argument>0</Argument>
+          <Argument>180</Argument>
+          <Argument>0</Argument>
+          <Argument>60</Argument>
+          <Argument>120</Argument>
+        </Property>
+        <Property Name="GaugeFont">Microsoft Sans Serif, 9.75pt, style=Bold</Property>
+        <Property Name="ArrowWidth">2</Property>
+        <Property Name="MaxColor">Green</Property>
+        <Property Name="LegendText">km/h</Property>
+        <Property Name="IsFrame">False</Property>
+        <Property Name="ScaleAngle">180</Property>
+        <Property Name="SymbolConfiguration">5;16;VTT::MyECU::Dio;;;env_Speed;1;;;-1;;;</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.ProgressBarControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="ProgressBarControl1" Children="Controls" ControlName="Progress Bar">
+        <Property Name="Name">ProgressBarControl1</Property>
+        <Property Name="Size">96, 241</Property>
+        <Property Name="Location">71, 241</Property>
+        <Property Name="OriginValue">0</Property>
+        <Property Name="Alignment">RightBottom</Property>
+        <Property Name="Maximum">255</Property>
+        <Property Name="Orientation">Vertical</Property>
+        <Property Name="DecimalPlaces">0</Property>
+        <Property Name="AlarmUpperLimit">30</Property>
+        <Property Name="ValueSize">38, 28</Property>
+        <Property Name="SymbolConfiguration">5;1;environment;;;env_BatteryStatus;1;;;-1;;;</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static Text">
+        <Property Name="Name">StaticTextControl1</Property>
+        <Property Name="Size">97, 18</Property>
+        <Property Name="Location">71, 217</Property>
+        <Property Name="Font">Microsoft Sans Serif, 9.75pt, style=Bold</Property>
+        <Property Name="TextAlign">MiddleCenter</Property>
+        <Property Name="BorderStyle">FixedSingle</Property>
+        <Property Name="Text">BATTERY %</Property>
+      </Object>
+      <Property Name="Name">GroupBoxControl1</Property>
+      <Property Name="Size">250, 498</Property>
+      <Property Name="Location">741, 25</Property>
+      <Property Name="BackColor">White</Property>
+      <Property Name="Font">Microsoft Sans Serif, 9.75pt, style=Bold</Property>
+      <Property Name="Text">Analog speedometer</Property>
+      <Property Name="TabIndex">16</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">994, 539</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>

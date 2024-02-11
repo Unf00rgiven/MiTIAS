@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<testmodule starttime="2024-02-11 21:27:06" timestamp="   0.989907" verdicts="2_basic">
+  <testcase starttime="2024-02-11 21:27:06" timestamp="   0.989907">
+    <teststep timestamp="   3.989907" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=3000ms (max=3000ms)</teststep>
+    <verdict time="2024-02-11 21:27:09" timestamp="   3.989907" endtime="2024-02-11 21:27:09" endtimestamp="   3.989907" result="pass" />
+    <title>tc1</title>
+  </testcase>
+  <testcase starttime="2024-02-11 21:27:09" timestamp="   3.989907">
+    <teststep timestamp="   6.989907" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=3000ms (max=3000ms)</teststep>
+    <verdict time="2024-02-11 21:27:12" timestamp="   6.989907" endtime="2024-02-11 21:27:12" endtimestamp="   6.989907" result="pass" />
+    <title>tc2</title>
+  </testcase>
+  <testcase starttime="2024-02-11 21:27:12" timestamp="   6.989907">
+    <teststep timestamp="   9.989907" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=3000ms (max=3000ms)</teststep>
+    <verdict time="2024-02-11 21:27:15" timestamp="   9.989907" endtime="2024-02-11 21:27:15" endtimestamp="   9.989907" result="pass" />
+    <title>tc3</title>
+  </testcase>
+  <testcase starttime="2024-02-11 21:27:15" timestamp="   9.989907">
+    <teststep timestamp="  12.989907" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=3000ms (max=3000ms)</teststep>
+    <verdict time="2024-02-11 21:27:18" timestamp="  12.989907" endtime="2024-02-11 21:27:18" endtimestamp="  12.989907" result="pass" />
+    <title>tc4</title>
+  </testcase>
+  <testcase starttime="2024-02-11 21:27:18" timestamp="  12.989907">
+    <teststep timestamp="  15.989907" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=3000ms (max=3000ms)</teststep>
+    <verdict time="2024-02-11 21:27:21" timestamp="  15.989907" endtime="2024-02-11 21:27:21" endtimestamp="  15.989907" result="pass" />
+    <title>tc5</title>
+  </testcase>
+  <testcase starttime="2024-02-11 21:27:21" timestamp="  15.989907">
+    <teststep timestamp="  18.989907" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=3000ms (max=3000ms)</teststep>
+    <verdict time="2024-02-11 21:27:24" timestamp="  18.989907" endtime="2024-02-11 21:27:24" endtimestamp="  18.989907" result="pass" />
+    <title>tc6</title>
+  </testcase>
+  <verdict time="2024-02-11 21:27:24" timestamp="  18.989907" endtime="2024-02-11 21:27:24" endtimestamp="  18.989907" result="pass" />
+  <title>t_mod_titl()</title>
+  <testlogfiles>
+  </testlogfiles>
+  <engineer>
+    <xinfo>
+      <name>Windows Login Name</name>
+      <description>nituser</description>
+    </xinfo>
+    <info>
+      <name>Tested by</name>
+      <description>anastasija</description>
+    </info>
+  </engineer>
+  <testsetup>
+    <xinfo>
+      <name>Version</name>
+      <description>CANoe.LIN.FlexRay.Ethernet.AMD/XCP 11.0.81 (SP3)</description>
+    </xinfo>
+    <xinfo>
+      <name>Configuration</name>
+      <description>C:\\nit-au-03\AUTOSAR_Exercises\AFS\CANoe\MyECU.cfg</description>
+    </xinfo>
+    <xinfo>
+      <name>Database CAN on CAN</name>
+      <description>C:\\nit-au-03\AUTOSAR_Exercises\AFS\Config\_InputDataBases\CAN.dbc (2024-02-11 20:00:52)</description>
+    </xinfo>
+    <xinfo>
+      <name>Database environment on CAN</name>
+      <description>C:\\nit-au-03\AUTOSAR_Exercises\AFS\CANoe\CANdb\environment.dbc (2024-02-10 20:22:38)</description>
+    </xinfo>
+    <xinfo>
+      <name>Diagnostic Description of New_ECU_1</name>
+      <description>CommonDiagnostics, en-US, C:\\nit-au-03\AUTOSAR_Exercises\AFS\Config\_InputDataBases\ForTraining.cdd (1, 2016-02-25 14:35:19+01:00)</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module Name</name>
+      <description>Test</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module File</name>
+      <description>C:\\nit-au-03\AUTOSAR_Exercises\AFS\CANoe\Test.can</description>
+    </xinfo>
+    <xinfo>
+      <name>Last modification of Test Module File</name>
+      <description>2024-02-11, 21:26:39</description>
+    </xinfo>
+    <xinfo>
+      <name>Windows Computer Name</name>
+      <description>NITIW007</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module MyECU</name>
+      <description>CANoeEmu 2.22.1, Node &apos;MyECU&apos;, C:\\nit-au-03\AUTOSAR_Exercises\AFS\SUT\MyECU.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module CANoeILNLVector</name>
+      <description>CANoe Interaction Layer NL (Vector) Version 3.17.64 (Sep 20 2018 17:36:23) , C:\Program Files\Vector CANoe 11.0\Exec32\CANoeILNLVector.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module AsrNM</name>
+      <description>AsrNM (Version 2.1.2), C:\\nit-au-03\AUTOSAR_Exercises\AFS\CANoe\exec32\AsrNM.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module J1939TestServiceLibraryNL</name>
+      <description>J1939 Test Service Library for CANoe, Version 11.0.81.0, C:\Program Files\Vector CANoe 11.0\Exec32\J1939TestServiceLibraryNL.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module CANOEILNLDEFAULT</name>
+      <description>CANoe Interaction Layer NL (Default) Version 3.17.64 (Sep 20 2018 17:37:54) , C:\Program Files\Vector CANoe 11.0\Exec32\CANOEILNLDEFAULT.DLL</description>
+    </xinfo>
+    <info>
+      <name>Device: CANister</name>
+      <description>Firmware: 3.0.05</description>
+    </info>
+  </testsetup>
+  <sut>
+    <info>
+      <name>some string</name>
+      <description>ognjen</description>
+    </info>
+  </sut>
+</testmodule>
+<!--footprint="3997d6f3fd1c2c1911cdc42f197b46e0" version="1"-->
